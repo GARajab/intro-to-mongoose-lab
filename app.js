@@ -31,8 +31,7 @@ while (true) {
     // Create a customer
     const name = promp("Enter Your Name: ")
     const age = promp("Enter Your Age: ")
-    // const newCustomer = new Customer({ name, email })
-    // await newCustomer.save()
+  
 
     const customerData = {
       customerName: name,
@@ -72,19 +71,3 @@ while (true) {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`)
 })
-// const createCustomer = async () => {
-//   const customerData = {
-//     customerName: "Rajab",
-//     age: 37,
-//   }
-
-//   const customer = await Customer.create(customerData)
-//   console.log("New Customer:", customer)
-// }
-
-// const runQueries = async () => {
-//   console.log("Queries running.")
-//   await createCustomer()
-// }
-
-// runQueries()
